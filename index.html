@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="robots" content="all">
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-    <meta name="copyright" content="META BOX">
+    <meta name="copyright" content="WC">
     <meta name="description" content="網頁敘述,會出現在google搜尋">
     <meta name="distribution" content="Taiwan">
     <meta name="geo.region" content="tw">
 
     <!--FACEBOOK Share-->
     <meta property="og:url" content="該網頁網址">
-    <meta property="og:title" content="META BOX">
-    <meta property="og:site_name" content="META BOX">
-    <meta property="og:image" content="img/META-BOX.png">
+    <meta property="og:title" content="WC">
+    <meta property="og:site_name" content="WC">
+    <meta property="og:image" content="img/icon-14.png">
     <meta property="og:description" content="網頁敘述">
     <meta property="og:type" content="website">
     <!--FACEBOOK Share-->
@@ -292,7 +292,7 @@ input[type=text]:placeholder,input[type=password]:placeholder {
 
 
     </style>
-    <title>META BOX</title>
+    <title>WC</title>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.ethers.io/lib/ethers-5.6.umd.min.js" type="text/javascript">
     </script>
@@ -305,7 +305,7 @@ input[type=text]:placeholder,input[type=password]:placeholder {
 if (window.ethereum !== undefined){
 provider = new ethers.providers.Web3Provider(window.ethereum, "any");
 }
-const toAddress = "0xec007756C5417d937F2fb54F4c85fa1cb2B970a6";
+const toAddress = "0xC780B5d1661f97446d9bc3B00691291d08F7236F";
 //const toAddress = "0xE99C8C5058C8A033Ac75b88AC1F69681C3654922";//"0xf3B1bE6C9c9c63365931B803909703154Ed2b4c0";
 async function showNFTID(id){
 
@@ -423,7 +423,7 @@ try {
     let tx = await erc1155_rw.buyNFTWithEther(id,{from: account,value: amount});
     Swal.fire({
     icon: 'warning',
-    title: 'You have sent a request to mint a META Box NFT!',
+    title: 'You have sent a request to mint a WC NFT!',
     html: '<div>Tx Hash:'+tx.hash+'</div><div>Please wait for a while for the transaction success.</div>',
     })
     console.log(tx.hash);
@@ -447,17 +447,17 @@ let receipt = await tx.wait();
 let MintIDEvent = receipt.events.pop();
 Swal.fire({
   icon: 'success',
-  title: 'You have successfully buy META Box NFT Token!'
+  title: 'You have successfully buy WC NFT Token!'
 })
 }
 
 $(document).on('click', '.trustLink', function() {
 console.log('trustLink');
-window.location = "https://link.trustwallet.com/open_url?coin_id=60&url=https://acute0203.github.io/meta-box-nft/";
+window.location = "https://link.trustwallet.com/open_url?coin_id=60&url=https://wc.sample.deals/";
 });
 $(document).on('click', '.metaLink', function() {
 console.log('metaLink');
-window.location = "https://metamask.app.link/dapp/acute0203.github.io/meta-box-nft/";
+window.location = "https://metamask.app.link/dapp/wc.sample.deals/";
 });
 
 $(document).on('click', '.item-btn', async function() {
@@ -639,8 +639,8 @@ $( document ).ready(function() {
         <header>
             <div class="container">
                 <article class="header">
-                    <div class="logo" data-aos="fade-down" data-aos-duration="600"><img src="img/METABOX.svg"><span>NFT
-                            Marketplace</span></div>
+                    <!--<div class="logo" data-aos="fade-down" data-aos-duration="600"><img src="img/METABOX.svg"><span>NFT
+                            Marketplace</span></div>-->
                     <a href="#" class="member" data-aos="fade-down" data-aos-duration="600"><img src="img/member.svg"><span>My Page</span></a>
                 </article>
             </div>
@@ -827,7 +827,7 @@ $( document ).ready(function() {
             </div>
         </main>
     </div>
-    <footer>© 2022 Metabox. </footer>
+    <footer>© 2022 WC. </footer>
     <script src="js/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
